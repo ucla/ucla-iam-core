@@ -1,0 +1,19 @@
+h1. Core UCLA IAM Sass Styles
+
+h2. Use
+
+The ucla/polymer generator will automatically drop an appopriate .gitmodules file in your dir
+
+To add to an existing project
+
+@ git submodule add https://github.com/ucla/ucla-iam-core.git app/styles/ucla-iam-core@
+
+Which will create a .gitmodules containing
+
+[submodule "app/styles/ucla-iam-core"]
+	path = app/styles/ucla-iam-core
+	url = https://github.com/ucla/ucla-iam-core.git
+
+Feel free to change @app/styles/ucla-iam-core@ in the command if you wish it elsewhere.
+
+more info @ http://www.git-scm.com/book/en/v2/Git-Tools-Submodules
