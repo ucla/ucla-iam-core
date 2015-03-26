@@ -9,11 +9,11 @@ To add to an existing project
 @git submodule add https://github.com/ucla/ucla-iam-core.git app/styles/ucla-iam-core@
 
 Which will create a .gitmodules containing
-<code>
+<pre>
 [submodule "app/styles/ucla-iam-core"]
 	path = app/styles/ucla-iam-core
 	url = https://github.com/ucla/ucla-iam-core.git
-</code>
+</pre>
 
 Feel free to change @app/styles/ucla-iam-core@ in the command if you wish it elsewhere.
 
