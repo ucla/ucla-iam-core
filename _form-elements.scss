@@ -11,7 +11,7 @@ input, textarea, select {
 }
 
 select, input, textarea {
-  padding: 0.4em 0.5em 0.2em;
+  padding: ($default-spacing * 0.4) $half-spacing ($default-spacing * 0.2);
   display: inline-block;
   border: 1px solid $neutral;
   box-shadow: inset 0 1px 3px lighten($neutral, 7%);
@@ -114,7 +114,7 @@ button, .button {
   font-size: 100%;
   *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
   *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
-  padding: 0.7em 1.05em;
+  padding: ($default-spacing * 0.7) ($default-spacing * 1.05);
   color: #444; /* rgba not supported (IE 8) */
   color: rgba(0, 0, 0, 0.80); /* rgba supported */
   *color: #444; /* IE 6 & 7 */
