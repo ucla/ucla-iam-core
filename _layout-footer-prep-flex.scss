@@ -1,0 +1,11 @@
+// setting up sticky <ucla-footer> at bottom, general page flow
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

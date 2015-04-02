@@ -2,10 +2,7 @@ html {
 	background: $html-background;
   background-size: cover;
 	box-sizing: border-box;
-	position: relative;
-	min-height: 100%;
-	width: 100%;
-  padding-bottom: $triple-spacing;
+  line-height: $base-line-height;
 }
 
 *, *:before, *:after {
@@ -91,18 +88,18 @@ img, video {
 
 section[role="main"] ul {
   list-style: none;
-  padding-left: .1em;
+  padding-left: ($default-spacing * 0.1);
   margin-bottom: 0;
   li {
-    margin: -.15em 0 0;
+    margin: -($default-spacing * 0.15) 0 0;
   }
   li:before {
     color: $bullet-color;
     content: "•";
     position: relative;
-    font-size: 1.6em;
-    left: -.13em;
-    top: .1em;
+    font-size: ($default-spacing * 1.6);
+    left: -($default-spacing * 0.13);
+    top: ($default-spacing * 0.1);
   }
 }
 
