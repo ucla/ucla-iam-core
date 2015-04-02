@@ -28,7 +28,7 @@
 ///        ICON CONTAINER BADGE
 /////////////////////////////////////////
 
-@mixin badge($background: $error-color, $color: $error-color-dark, $base-size: ($default-spacing * 2.5) {
+@mixin badge($background: $error-color, $color: $error-color-dark, $base-size: ($default-spacing * 2.5)) {
 	position: absolute;
 	bottom: -$triple-spacing * 1.5;
 	right: $double-spacing;
