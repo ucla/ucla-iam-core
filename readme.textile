@@ -17,4 +17,12 @@ Which will create a .gitmodules containing
 
 Feel free to change @app/styles/ucla-iam-core@ in the command if you wish it elsewhere.
 
-more info @ http://www.git-scm.com/book/en/v2/Git-Tools-Submodules
+h2. Update
+
+Once installed you can pull down the latest version inside your application by running
+
+@git submodule update --remote app/styles/ucla-iam-core@
+
+h3. Further Reading
+
+http://www.git-scm.com/book/en/v2/Git-Tools-Submodules
