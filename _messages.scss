@@ -3,11 +3,13 @@
   color: $error-color;
   border-radius: $global-border-radius;
   padding: $half-spacing;
+  font-weight: 400;
 }
 
 .message-success {
-  background: $black;
+  background: $ucla-grey;
   color: $success-color;
   border-radius: $global-border-radius;
   padding: $half-spacing;
+  font-weight: 400;
 }
