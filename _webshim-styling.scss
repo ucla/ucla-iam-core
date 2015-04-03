@@ -2,22 +2,27 @@
 // options in sso.js
 
 .ws-errorbox {
-  @extend .error-box;
+  margin-top: -$default-spacing;
+  margin-bottom: $default-spacing;
+  p {
+    color: $error-color;
+    text-align: left;
+  }
 }
 
 .ws-errormessage {
-
+  
 }
 
 .ws-invalid {
-
+  
 }
 
 .ws-success {
-
+  
 }
 
-// overriding date input
+// override polyfilled date input
 
 input.ws-date {
   width: 100% !important;
