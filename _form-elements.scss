@@ -105,9 +105,6 @@ button, .button {
   text-align: center;
   cursor: pointer;
   -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
   font-size: 100%;
@@ -149,8 +146,6 @@ button[disabled] {
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   filter: alpha(opacity=40);
-  -khtml-opacity: 0.40;
-  -moz-opacity: 0.40;
   opacity: 0.40;
   cursor: not-allowed;
   box-shadow: none;
