@@ -43,15 +43,15 @@ select:focus:invalid:focus {
 }
 
 ::-webkit-input-placeholder {
-  color: darken($neutral, 20%);
+  color: $neutral;
 }
 
 ::-moz-placeholder {
-  color: darken($neutral, 20%);
+  color: $neutral;
 }
 
 :-ms-input-placeholder {
-  color: darken($neutral, 20%);
+  color: $neutral;
 }
 
 select[multiple] {
@@ -91,6 +91,10 @@ label {
  input + .for-checkbox, input + .for-radio {
    margin-top: 0;
  }
+ 
+ input + button, input + .button {
+  margin-top: $half-spacing / 2;
+}
 
 button, .button {
   width: 100%;
@@ -126,14 +130,9 @@ button, .button {
   &:active {
     box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
   }
-}
-
-input + button {
-  margin-top: $half-spacing / 2;
-}
-
-.button a {
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
 }
 
 /* Firefox: Get rid of the inner focus border */
