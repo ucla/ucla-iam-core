@@ -34,7 +34,7 @@ select[disabled], input[disabled] {
 // styling when field is invalid and it has focus - just assume they're doing fine
 input:focus:invalid:focus,
 select:focus:invalid:focus {
-  border-color: $form-invalid-color;
+  border-color: $primary-color-alternate-state;
 	color: $body-text-color;
 }
 
