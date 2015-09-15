@@ -1,7 +1,7 @@
 html {
-	background: $html-background;
-  background-size: cover;
-	box-sizing: border-box;
+  background: $html-background;
+  background-size: $html-background-size;
+  box-sizing: border-box;
   line-height: $base-line-height;
 }
 
@@ -86,12 +86,26 @@ img, video {
   height: auto;
 }
 
-section[role="main"] ul {
+
+ol {
+  padding-left: $default-spacing * 1.5;
+  li {
+    margin-bottom: $half-spacing;
+  }
+}
+
+ul {
   list-style: none;
-  padding-left: ($default-spacing * 0.1);
+  padding-left: .1em;
   margin-bottom: 0;
   li {
-    margin: -($default-spacing * 0.15) 0 0;
+    margin-top: $half-spacing;
+  }
+}
+
+ul.branded {
+  li {
+    margin: -.15em 0 0;
   }
   li:before {
     color: $bullet-color;

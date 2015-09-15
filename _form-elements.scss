@@ -31,15 +31,31 @@ select[disabled], input[disabled] {
   color: $neutral;
 }
 
-input:focus:invalid,
-select:focus:invalid {
-  color: darken($form-invalid-color, 5%);
-  border-color: $form-invalid-color;
-}
-
+// styling when field is invalid and it has focus - just assume they're doing fine
 input:focus:invalid:focus,
 select:focus:invalid:focus {
   border-color: $form-invalid-color;
+	color: $body-text-color;
+}
+
+// styling when field is invalid and it doesn't have focus - let people know, but not too aggressively on border/bg due to inputs not reached yet
+input:invalid,
+select:invalid {
+  border-color: lighten($form-invalid-color, 25%);
+	color: $form-invalid-color;
+}
+
+// styling when field is valid and it still has focus - focus border + success
+input:focus:valid:focus,
+select:focus:valid:focus {
+	border-color: $form-valid-color;
+	background: lighten($form-valid-color, 48%);
+}
+
+// styling when field is valid and the user has left it - subtle success
+input:valid,
+select:valid {
+	background: lighten($form-valid-color, 48%);
 }
 
 ::-webkit-input-placeholder {
@@ -91,7 +107,7 @@ label {
  input + .for-checkbox, input + .for-radio {
    margin-top: 0;
  }
- 
+
  input + button, input + .button {
   margin-top: $half-spacing / 2;
 }
