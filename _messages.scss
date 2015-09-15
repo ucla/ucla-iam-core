@@ -38,7 +38,7 @@
 	box-shadow: 0 1px 1px #347bad;
 	border-radius: $global-border-radius;
 	padding: 0 7.5% 2.5% ;
-	@include breakpoint($grid-elastic) {
+	@include breakpoint($multi-column) {
 		padding: 0 $default-spacing;
 	}
 	margin-bottom: $triple-spacing;
@@ -47,6 +47,9 @@
 .message-fail {
   background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
   color: $error-color;
+  a {
+    color: $error-color;
+  }
   border-radius: $global-border-radius;
   padding: $half-spacing;
   font-weight: 400;
@@ -55,6 +58,9 @@
 .message-success {
   background: $ucla-grey;
   color: $success-color;
+  a {
+    color: $success-color;
+  }
   border-radius: $global-border-radius;
   padding: $half-spacing;
   font-weight: 400;

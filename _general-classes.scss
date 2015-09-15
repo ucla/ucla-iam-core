@@ -49,29 +49,20 @@
 	border-top: 1px solid $ucla-blue-light;
 	padding: $half-spacing;
 	color: lighten($body-text-color, 40%);
-	@include breakpoint($grid-liquid) {
+	@include breakpoint($multi-column) {
 		height: $double-spacing;
+	}
+	.ucla-iam-footer-content {
+  	margin: 0 auto;
+  	font-size: $meta-font-size;
 	}
 	a, span {
 		display: block;
 		width: 100%;
-		@include breakpoint($grid-liquid) {
+		@include breakpoint($multi-column) {
 			display: inline;
 			width: auto;
 		}
-	}
-}
-
-// for IE8 w/ modernizr check
-.no-rgba .ucla-iam-footer {
-  background: #111;
-}
-
-
-.ucla-iam-footer-content {
-	p {
-		margin: 0 auto;
-		font-size: $meta-font-size;
 	}
 	a {
 		text-decoration: none;
@@ -84,4 +75,9 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+// for IE8 w/ modernizr check
+.no-rgba .ucla-iam-footer {
+  background: #111;
 }
