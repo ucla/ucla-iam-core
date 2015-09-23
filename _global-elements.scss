@@ -17,6 +17,11 @@ body {
   @include enable-ligatures();
 }
 
+p {
+  margin: $default-spacing 0;
+  font-size: $p-font-size;
+}
+
 h1, h2, h3, h4 {
   font-weight: $header-weight;
   color: $primary-color-safe;
